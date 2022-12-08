@@ -22,7 +22,7 @@ const Home=props=>{
       throw(err)
     })
   }, [])
-  const url = "http://localhost:3001/";
+  const url = "http://192.241.146.229:3001/";
 
   const Slideimages=[];
   for(let i = 0; i < 6; i++){
@@ -61,7 +61,7 @@ const Home=props=>{
   const [search, setSearch] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/searchbar")
+    axios.get("http://192.241.146.229:3001/searchbar")
     .then(apiResponse => {
       setSearch(apiResponse.data.products);
     })
