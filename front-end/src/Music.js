@@ -14,7 +14,7 @@ const Music = props => {
   const [collection, setCollection] = useState(null)
 
   useEffect(() => {
-    axios.get("http://localhost:3001/product/collection/music")
+    axios.get("http://192.241.146.229:3001/product/collection/music")
     .then(apiResponse => {
       // console.log(apiResponse.data)
       setCollection(apiResponse.data.products);
