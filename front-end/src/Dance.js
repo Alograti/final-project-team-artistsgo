@@ -14,7 +14,7 @@ const Dance = props => {
   const [collection, setCollection] = useState(null)
 
   useEffect(() => {
-    axios.get("http://localhost:3001/product/collection/dance")
+    axios.get("http://192.241.146.229:3001/product/collection/dance")
     .then(apiResponse => {
       // console.log(apiResponse.data[0])
       setCollection(apiResponse.data.products);
