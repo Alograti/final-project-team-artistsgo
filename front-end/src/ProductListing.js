@@ -28,7 +28,7 @@ const ProductListing = props => {
       throw(err)
     })
   }, [])
-  const url = "http://localhost:3001/";
+  const url = "http://http://192.241.146.229:3001/";
   const [index, setIndex]=React.useState(0);
   const timeoutRef = React.useRef(null);
   function resetTimeout() {
