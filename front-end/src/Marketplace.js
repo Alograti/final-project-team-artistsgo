@@ -14,7 +14,7 @@ const Marketplace = props => {
   const [collection, setCollection] = useState(null)
 
   useEffect(() => {
-    axios.get("http://localhost:3001/product/collection/marketplace")
+    axios.get("http://192.241.146.229:3001/product/collection/marketplace")
     .then(apiResponse => {
       // console.log(apiResponse.data[0])
       setCollection(apiResponse.data.products);
