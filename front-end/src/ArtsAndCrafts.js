@@ -15,7 +15,7 @@ const ArtsAndCrafts = props => {
   const [collection, setCollection] = useState(null)
 
   useEffect(() => {
-    axios.get("http://localhost:3001/product/collection/arts-and-crafts")
+    axios.get("http://192.241.146.229:3001/product/collection/arts-and-crafts")
     .then(apiResponse => {
       // console.log(apiResponse.data[0])
       console.log(apiResponse.data)
