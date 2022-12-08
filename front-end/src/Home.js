@@ -13,7 +13,7 @@ const Home=props=>{
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/product")
+    axios.get("http://192.241.146.229:3001/product")
     .then(apiResponse => {
       setProducts(apiResponse.data.products);
       //console.log("rendered 1")
