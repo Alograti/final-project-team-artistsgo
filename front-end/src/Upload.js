@@ -33,7 +33,7 @@ const Upload = props =>{
         //     return(e.toLowerCase().replaceAll(" ", "-"));
         // })))
        
-		axios.post('http://localhost:3001/product/add/', formData)
+		axios.post('http://192.241.146.229:3001/product/add/', formData)
         .then(res => {
             console.log(res);
         })
